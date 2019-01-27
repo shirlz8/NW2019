@@ -1,5 +1,6 @@
 package com.example.shirleyzeng.nw2019;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -18,6 +19,8 @@ import android.widget.Toast;
 public class groupSideBarMenu extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    private Menu sideBarMenu;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,8 +32,7 @@ public class groupSideBarMenu extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MenuInflater inflater = getMenuInflater();
-                // inflater.add(nav_HangoutGroup, int itemId, int order, CharSequence title) ;
+                onPrepareOptionsMenu(sideBarMenu);
                 // Toast.makeText(groupSideBarMenu.this, "Hello World", Toast.LENGTH_LONG).show();
             }
         });
@@ -59,6 +61,7 @@ public class groupSideBarMenu extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.group_side_bar_menu, menu);
+        sideBarMenu = menu;
         return true;
     }
 
@@ -90,6 +93,8 @@ public class groupSideBarMenu extends AppCompatActivity
         } else if (id == R.id.nav_Group3) {
 
         } else if (id == R.id.nav_addNewHangout) {
+            Intent i = new Intent(groupSideBarMenu.this, addUsersToGroup.class);
+            startActivity(i);
 
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
