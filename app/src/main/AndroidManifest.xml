@@ -29,7 +29,10 @@
             android:name=".groupSideBarMenu"
             android:label="@string/title_activity_group_side_bar_menu"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".addUsersToGroup"></activity>
+        <activity android:name=".addUsersToGroup" />
+        <activity
+            android:name=".hangoutSettings"
+            android:label="@string/title_activity_group_side_bar_menu"></activity>
     </application>
 
 </manifest>

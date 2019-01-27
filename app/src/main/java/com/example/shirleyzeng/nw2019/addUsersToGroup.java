@@ -1,8 +1,10 @@
 package com.example.shirleyzeng.nw2019;
 
 import android.content.Intent;
+import android.support.design.widget.NavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -33,6 +35,7 @@ public class addUsersToGroup extends AppCompatActivity {
                 this,
                 android.R.layout.simple_list_item_1,
                 listOfAddedUsers);
+        // menu = getMenuInflater();
 
         lv.setAdapter(arrayAdapter);
     }
