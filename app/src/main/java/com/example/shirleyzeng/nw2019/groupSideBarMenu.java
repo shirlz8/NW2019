@@ -2,9 +2,6 @@ package com.example.shirleyzeng.nw2019;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.MenuInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -84,7 +81,6 @@ public class groupSideBarMenu extends AppCompatActivity
     }
 
     public void updateOption1(View view){
-        Toast.makeText(groupSideBarMenu.this, "inside update", Toast.LENGTH_LONG).show();
         TextView counter = (TextView)findViewById(R.id.pollResults1);
         String S = counter.getText().toString();
         if(S == ""){
@@ -95,6 +91,52 @@ public class groupSideBarMenu extends AppCompatActivity
             counter.setText(Integer.toString(count));
         }
     }
+    public void updateOption2(View view){
+        TextView counter = (TextView)findViewById(R.id.pollResults2);
+        String S = counter.getText().toString();
+        if(S == ""){
+            counter.setText("1");
+        }else{
+            int count = Integer.parseInt(S);
+            count ++;
+            counter.setText(Integer.toString(count));
+        }
+    }
+    public void updateOption3(View view){
+        TextView counter = (TextView)findViewById(R.id.pollResults3);
+        String S = counter.getText().toString();
+        if(S == ""){
+            counter.setText("1");
+        }else{
+            int count = Integer.parseInt(S);
+            count ++;
+            counter.setText(Integer.toString(count));
+        }
+    }
+    public void updateOption4(View view){
+        TextView counter = (TextView)findViewById(R.id.pollResults4);
+        String S = counter.getText().toString();
+        if(S == ""){
+            counter.setText("1");
+        }else{
+            int count = Integer.parseInt(S);
+            count ++;
+            counter.setText(Integer.toString(count));
+        }
+    }
+
+    public void updateOption5(View view){
+        TextView counter = (TextView)findViewById(R.id.pollResults5);
+        String S = counter.getText().toString();
+        if(S == ""){
+            counter.setText("1");
+        }else{
+            int count = Integer.parseInt(S);
+            count ++;
+            counter.setText(Integer.toString(count));
+        }
+    }
+
 
 
 
