@@ -337,6 +337,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             if (success) {
                 Intent i = new Intent(LoginActivity.this, cuisinePreferences.class);
                 startActivity(i);
+                User user1 = new User(mEmail,mPassword);
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
                 mPasswordView.requestFocus();
