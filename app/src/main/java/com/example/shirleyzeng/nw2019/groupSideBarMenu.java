@@ -80,7 +80,7 @@ public class groupSideBarMenu extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    public void updateOption1(View view){
+    /*public void updateOption1(View view){
         TextView counter = (TextView)findViewById(R.id.pollResults1);
         String S = counter.getText().toString();
         if(S == ""){
@@ -135,6 +135,11 @@ public class groupSideBarMenu extends AppCompatActivity
             count ++;
             counter.setText(Integer.toString(count));
         }
+    }
+*/
+    public void getRestaurant1Info (View view){
+        Intent i = new Intent(groupSideBarMenu.this, restaurant1info.class);
+        startActivity(i);
     }
 
 
