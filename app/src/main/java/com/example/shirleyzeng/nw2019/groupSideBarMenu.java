@@ -3,6 +3,7 @@ package com.example.shirleyzeng.nw2019;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.view.MenuInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,6 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class groupSideBarMenu extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -27,8 +29,9 @@ public class groupSideBarMenu extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                MenuInflater inflater = getMenuInflater();
+                // inflater.add(nav_HangoutGroup, int itemId, int order, CharSequence title) ;
+                // Toast.makeText(groupSideBarMenu.this, "Hello World", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -80,16 +83,15 @@ public class groupSideBarMenu extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_Group1) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_Group2) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_Group3) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_addNewHangout) {
 
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
