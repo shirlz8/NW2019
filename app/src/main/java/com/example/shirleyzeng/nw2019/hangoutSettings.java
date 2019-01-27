@@ -14,7 +14,6 @@ public class hangoutSettings extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        String.format(getResources().getString(R.string.title_activity_group_side_bar_menu), "default group");
         setContentView(R.layout.activity_hangout_settings);
     }
 
@@ -27,9 +26,10 @@ public class hangoutSettings extends AppCompatActivity {
         EditText editText = (EditText) findViewById(R.id.newGroupName);
         String message = editText.getText().toString();
         Resources res = getResources();
-        String text = String.format(res.getString(R.string.title_activity_group_side_bar_menu), message);
-        Toast.makeText(hangoutSettings.this, "Group name has been set", Toast.LENGTH_LONG).show();
-
+        // String text = String.format(res.getString(R.string.title_activity_group_side_bar_menu), message);
+        Toast.makeText(hangoutSettings.this, message, Toast.LENGTH_LONG).show();
+        Intent i = new Intent(hangoutSettings.this, groupSideBarMenu.class);
+        startActivity(i);
 
     }
 

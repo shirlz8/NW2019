@@ -28,14 +28,14 @@ public class groupSideBarMenu extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+       /* FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onPrepareOptionsMenu(sideBarMenu);
                 // Toast.makeText(groupSideBarMenu.this, "Hello World", Toast.LENGTH_LONG).show();
             }
-        });
+        });*/
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -74,6 +74,8 @@ public class groupSideBarMenu extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent i = new Intent(groupSideBarMenu.this, hangoutSettings.class);
+            startActivity(i);
             return true;
         }
 
@@ -94,6 +96,9 @@ public class groupSideBarMenu extends AppCompatActivity
 
         } else if (id == R.id.nav_addNewHangout) {
             Intent i = new Intent(groupSideBarMenu.this, addUsersToGroup.class);
+            startActivity(i);
+        } else if (id == R.id.nav_editPreferences) {
+            Intent i = new Intent(groupSideBarMenu.this, cuisinePreferences.class);
             startActivity(i);
 
         }

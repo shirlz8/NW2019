@@ -68,7 +68,7 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
-    <string name="title_activity_cuisine_preferences">cuisinePreferences</string>
+    <string name="title_activity_cuisine_preferences">Cuisine Preferences</string>
     <string name="title_activity_group_side_bar_menu" formatted="true">Hangout!</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

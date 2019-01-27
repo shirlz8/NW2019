@@ -23,7 +23,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".cuisinePreferences" />
+        <activity
+            android:name=".cuisinePreferences"
+            android:label="@string/title_activity_cuisine_preferences"></activity>
         <activity android:name=".UserHomePage" />
         <activity
             android:name=".groupSideBarMenu"
