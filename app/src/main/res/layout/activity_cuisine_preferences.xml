@@ -24,6 +24,8 @@
         app:layout_constraintVertical_bias="0.982" />
 
     <CheckBox
+        android:buttonTint = "@color/textColor"
+        android:textColor="@color/textColor"
         android:id="@+id/checkBox_Vegetarian"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -40,6 +42,8 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <CheckBox
+        android:buttonTint = "@color/textColor"
+        android:textColor="@color/textColor"
         android:id="@+id/checkBox_Chinese"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -56,6 +60,8 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <CheckBox
+        android:buttonTint = "@color/textColor"
+        android:textColor="@color/textColor"
         android:id="@+id/checkBox_Korean"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -72,6 +78,8 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <CheckBox
+        android:buttonTint = "@color/textColor"
+        android:textColor="@color/textColor"
         android:id="@+id/checkBox_Itallian"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -88,6 +96,8 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
+        android:buttonTint = "@color/textColor"
+        android:textColor="@color/textColor"
         android:id="@+id/textView4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -105,7 +115,9 @@
         app:layout_constraintVertical_bias="0.128" />
 
     <CheckBox
-        android:id="@+id/checkBox6"
+        android:buttonTint = "@color/textColor"
+        android:textColor="@color/textColor"
+        android:id="@+id/checkBox_Mexican"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -120,18 +132,22 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <CheckBox
-        android:id="@+id/checkBox7"
-        android:layout_width="wrap_content"
+        android:buttonTint = "@color/textColor"
+        android:textColor="@color/textColor"
+        android:id="@+id/checkBox_French"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="CheckBox"
+        android:text="French"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.202"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox6" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Mexican"
+        app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>
 

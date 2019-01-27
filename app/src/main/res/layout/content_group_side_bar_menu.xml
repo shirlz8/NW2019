@@ -16,7 +16,7 @@
         android:layout_marginBottom="324dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        android:text="Restaurant 3"
+        android:text="Damso"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +30,7 @@
         android:layout_marginBottom="265dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        android:text="Restaurant 4"
+        android:text="Miku"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +44,7 @@
         android:layout_marginBottom="16dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        android:text="Restaurant 5"
+        android:text="Usagi Sweets"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +58,7 @@
         android:layout_marginBottom="16dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        android:text="Restaurant 2"
+        android:text="TAKO"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/restView3"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +74,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:onClick="getRestaurant1Info"
-        android:text="Restaurant 1"
+        android:text="So Hyang Korean"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -84,6 +84,7 @@
         app:layout_constraintVertical_bias="0.022" />
 
     <CheckBox
+        android:buttonTint = "@color/textColor"
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -100,6 +101,7 @@
         app:layout_constraintVertical_bias="0.006" />
 
     <CheckBox
+        android:buttonTint = "@color/textColor"
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -115,6 +117,7 @@
         app:layout_constraintVertical_bias="0.015" />
 
     <CheckBox
+        android:buttonTint = "@color/textColor"
         android:id="@+id/checkBox3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -130,6 +133,7 @@
         app:layout_constraintVertical_bias="0.027" />
 
     <CheckBox
+        android:buttonTint = "@color/textColor"
         android:id="@+id/checkBox4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -145,6 +149,7 @@
         app:layout_constraintVertical_bias="0.075" />
 
     <CheckBox
+        android:buttonTint = "@color/textColor"
         android:id="@+id/checkBox5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

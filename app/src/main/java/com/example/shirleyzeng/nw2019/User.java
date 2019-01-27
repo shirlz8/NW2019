@@ -7,6 +7,7 @@ public class User {
     public String email;
     public String password;
     public ArrayList cuisinePreferences;
+    public Boolean  isVegetarian;
 
 
     public User(String email, String password){

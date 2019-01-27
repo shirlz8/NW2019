@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NW2019</string>
+    <string name="app_name">Let\'s Eat!</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>

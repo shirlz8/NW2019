@@ -25,8 +25,8 @@ public class addUsersToGroup extends AppCompatActivity {
         // Instanciating an array list (you don't need to do this,
         // you already have yours).
         List<String> listOfAddedUsers = new ArrayList<String>();
-        listOfAddedUsers.add("User1");
-        listOfAddedUsers.add("User2");
+        listOfAddedUsers.add("Samantha Pizza");
+        listOfAddedUsers.add("James Peach");
 
         // This is the array adapter, it takes the context of the activity as a
         // first parameter, the type of list view as a second parameter and your
