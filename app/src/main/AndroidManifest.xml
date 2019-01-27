@@ -23,7 +23,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".cuisinePreferences"></activity>
+        <activity android:name=".cuisinePreferences" />
+        <activity android:name=".UserHomePage" />
+        <activity
+            android:name=".groupSideBarMenu"
+            android:label="@string/title_activity_group_side_bar_menu"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
