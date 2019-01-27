@@ -14,6 +14,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class groupSideBarMenu extends AppCompatActivity
@@ -81,6 +82,21 @@ public class groupSideBarMenu extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void updateOption1(View view){
+        Toast.makeText(groupSideBarMenu.this, "inside update", Toast.LENGTH_LONG).show();
+        TextView counter = (TextView)findViewById(R.id.pollResults1);
+        String S = counter.getText().toString();
+        if(S == ""){
+            counter.setText("1");
+        }else{
+            int count = Integer.parseInt(S);
+            count ++;
+            counter.setText(Integer.toString(count));
+        }
+    }
+
+
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
